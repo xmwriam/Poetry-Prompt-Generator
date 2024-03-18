@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='finalsheet.css')}}" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=KoHo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <script>
+        function genpage() {
+            window.location = '/generator';
+        }
+    </script>
+</head>
+<body class="body">
+    <b1 type="button" class="submissionn" >submissions</b1>
+    <b1 type="button" class="generate" onclick="genpage()">GENERATE</b1>
+    <img class="imgg1" src="static\topflower.svg" >
+    <img class="imgg2" src="static\bottomflower.svg" >
+    <img class="imgg3" src="static\arrow.svg" >
+    <h1 class="myText">POETRY <br> PROMPT <br>GENERATOR...</h1>
+</body>
+</html>

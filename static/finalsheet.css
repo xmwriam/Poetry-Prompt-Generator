@@ -1,0 +1,191 @@
+
+.body{position: relative;
+    width: 1280px;
+    height: 664px;
+    background: #FAF9EC;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.myText{
+position: absolute;
+width: 813px;
+height: 421px;
+left: 80px;
+top: 112px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 95px;
+line-height: 121px;
+
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.084) 83.4%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke-color: #000000;
+-webkit-text-stroke-width: 1px;
+}
+
+.submissionn{
+position:absolute;
+width: 203px;
+height: 40px;
+right: 0px;
+top: 30px;
+margin: 0px;
+padding: 0px;
+cursor: pointer;
+font-family: 'KoHo';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 29px;
+text-decoration-line: underline;
+color: #000000;
+
+}
+/* GENERATE */
+.generate{
+position: absolute;
+width: 204px;
+height: 33px;
+left: 765px;
+top: 482px;
+cursor: pointer;
+font-family: 'KoHo';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 29px;
+text-decoration-line: underline;
+z-index: +10;
+color: #000000;
+}
+
+.imgg1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 300px;
+    z-index: +10;
+    
+
+}
+
+.imgg2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 450px;
+    height: 460px;
+}
+
+.imgg3{
+    position: absolute;
+    left: 930px;
+    top: 495px;   
+}
+
+.imgg4{position: relative;
+    width: 99.5%;
+    height: 99%;
+    z-index: -10;
+}
+
+.whiteBox{
+    position: absolute;
+    background-color: white;
+    top: 130px;
+    left: 180px;
+    width: 900px;
+    height: 330px;
+    border: solid #000000 1.5px;
+    display: grid;
+	align-items: center;
+    font-size: 20px;
+}
+
+/* UP FOR THE CHALLENGE? */
+
+.challenge{
+position: absolute;
+width: 742px;
+height: 50px;
+left: 186px;
+top: 467px;
+
+font-family: 'Lekton';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 30px;
+
+color: #000000;
+}
+
+.newbutton1{
+    /* REFRESH */
+
+position: absolute;
+width: 131px;
+height: 37px;
+left: 950px;
+top: 481px;
+background-color: #000000;
+border-radius: 50px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 29px;
+text-decoration-line: underline;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+/* ACCEPT */
+.newbutton2{
+position: absolute;
+width: 131px;
+height: 37px;
+left: 799px;
+top: 481px;
+background-color: #000000;
+border-radius: 50px;
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 29px;
+text-decoration-line: underline;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+
+}
+.newbutton1:hover{
+background-color: white;
+border: 2px solid black;
+color: black;
+}
+
+.newbutton2:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    }
+    
+
+
+
+
+
+
