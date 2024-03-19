@@ -19,25 +19,11 @@
 </body>
 </html>
 <script>
-    function genprompt() {
-        var words = ['The Untouchable: Something that will always be out of reach',
-        'Write a poem where each line/sentence is about each day of last week',
-    'What does your favorite color taste like?','Start the first line of your poem with a word or phrase from a recent passing conversation between you and someone you don’t know',
-    'Write a palinode - a poem in which you retract a view or sentiment expressed in an earlier poem',
-    'Start by reading Alberto Rios’s poem “Perfect for Any Occasion.” Now, write your own two-part poem that focuses on a food or type of meal. At some point in the poem, describe the food or meal as if it were a specific kind of person. Give the food/meal at least one line of spoken dialogue.',
-    'Begin by reading Bernadette Mayer’s poem “The Lobelias of Fear.” Now write your own poem titled “The ________ of ________,” where the first blank is a very particular kind of plant or animal, and the second blank is an abstract noun. The poem should contain at least one simile that plays on double meanings or otherwise doesn’t quite make “sense,” and describe things or beings from very different times or places as co-existing in the same space.',
-    'Write a portrait poem that focuses on or plays with the meaning of the subject’s name. This could be a self-portrait, a portrait of a family member or close friend, or even a portrait of a famous or historical person.',
-    'Write a love poem, one that names at least one flower, contains one parenthetical statement, and in which at least some lines break in unusual places.',
-    'Write a poem in the form of a review. But not a review of a book or a movie of a restaurant. Instead, write a poetic review of something that is not normally reviewed. For example, your mother-in-law, the moon, or the year you were ten years old.',
-    'Start off by reading Arvind Krishna Mehrotra’s “Lockdown Garden.” Now, try to write a poem of your own that has multiple numbered sections. Attempt to have each section be in dialogue with the others, like a song where a different person sings each verse, giving a different point of view. Set the poem in a specific place that you used to spend a lot of time in, but don’t spend time in anymore.',
-    'Find an Emily Dickinson poem – preferably one you’ve never previously read – and take out all the dashes and line breaks. Make it just one big block of prose. Now, rebreak the lines. Add words where you want. Take out some words. Make your own poem out of it!',
-    'One common feature of childhood is the monsters. The ones under the bed or in the closet; the odd local monsters that other kids swear roam the creek at night, or that parents say wait to steal away naughty children that don’t go to bed on time. Now, cast your mind back to your own childhood and write a poem about something that scared you – or was used to scare you – and which still haunts you (if only a little bit) today.',
-    'Write an abecedarian poem – a poem in which the word choice follows the words/order of the alphabet. You could write a very strict abecedarian poem, in which there are twenty-six words in alphabetical order, or you could write one in which each line begins with a word that follows the order of the alphabet.',
-    'Write a poem that involves describing something in terms of what it is not, or not like. For example, if you chose a whale as the topic of your poem, you might have lines like “It does not settle down in trees at night, cooing/Nor will it fit in your hand.”',
-    'Begin by reading Charles Simic’s poem “The Melon.” It would be easy to call the poem dark, but as they say, if you didn’t have darkness, you wouldn’t know what light is. Or vice versa. The poem illuminates the juxtaposition between grief and joy, sorrow and reprieve. For today’s challenge, write a poem in which laughter comes at what might otherwise seem an inappropriate moment – or one that the poem invites the reader to think of as inappropriate.'
-];
-        var word = words[Math.floor(Math.random() * words.length)];
-        document.getElementById("p1").innerHTML = word;
+    async function genprompt() {
+        document.getElementById("p1").innerHTML = "loading...";
+        f = await fetch("/prompt");
+        f = await f.text();
+        document.getElementById("p1").innerHTML = f;
     }
     function accprompt(){
         document.getElementById("p1").innerHTML = "All the best!";
