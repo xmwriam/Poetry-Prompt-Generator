@@ -18,8 +18,7 @@ def prompt():
     r = requests.get('https://api.reddit.com/r/WritingPrompts/', headers=headers)
     L =  r.json()
     num=len(L['data']['children'])
-    print('AAAA')
     ind=random.randint(3,num-1)
     return L['data']['children'][ind]['data']['title'][4::]
 
-app.run(debug=True)
+#app.run(debug=True)
